@@ -1,0 +1,30 @@
+.input-container {
+    @include flex(center, center);
+    flex-direction: column;
+    margin-right: 2rem;
+
+    &>label {
+        width: 100%;
+        font-size: 1.1rem;
+        color: $txt-main-color;
+    }
+
+    &>input {
+        padding: .5rem .7rem;
+        margin-bottom: 2rem;
+    }
+}
+
+
+.select-container {
+
+    &>label {
+        font-size: 1.1rem;
+        color: $txt-main-color;
+        margin-right: .5rem;
+    }
+
+    &>select {
+        padding: .5rem
+    }
+}

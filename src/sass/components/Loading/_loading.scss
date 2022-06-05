@@ -1,0 +1,14 @@
+.loading {
+    position: absolute;
+    inset: 0;
+    height: 100%;
+
+    .overlay {
+        position: absolute;
+        inset: 0;
+        height: 100%;
+        background-color: rgba($color: #fff, $alpha: 1);
+        @include flex(flex-start, center);
+
+    }
+}

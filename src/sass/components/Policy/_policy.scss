@@ -1,0 +1,56 @@
+.policy {
+
+    &-main {
+        margin-top: $height-header;
+        margin-right: 4rem;
+        margin-left: 4rem;
+
+        &__image {
+            img {
+                margin-bottom: 2rem;
+            }
+        }
+    }
+
+    &__list {
+        @include flex(center, space-between);
+        margin: 8rem 0;
+
+        &__item {
+            @include flex(center, space-between);
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+            padding: 2rem;
+            border-radius: 10px;
+            cursor: pointer;
+
+            &:hover {
+                transform: translateY(-20px);
+                box-shadow: rgba(149, 157, 165, 0.2) 0px 24px 24px;
+                transition: transform .5s ease, box-shadow .5s ease;
+            }
+
+
+            &__icon {
+                &>i {
+                    color: $main-color;
+                    font-size: 2rem;
+                    margin-right: 1rem;
+                }
+            }
+
+            &__info {
+                &__name {
+                    font-size: 1.2rem;
+                    font-weight: 600;
+                    color: $txt-main-color;
+                }
+
+                &__description {
+                    font-size: 1rem;
+                    font-weight: 500;
+                    color: $txt-main-color;
+                }
+            }
+        }
+    }
+}

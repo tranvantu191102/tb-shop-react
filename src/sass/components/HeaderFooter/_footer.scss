@@ -1,0 +1,125 @@
+.footer {
+    background-color: $second-color;
+    padding: 4rem;
+    color: $main-bg;
+
+
+    &__information {
+        @include flex(flex-start, space-between);
+
+        &__hotline {
+            @include flex(center, flex-start);
+            width: 50%;
+
+            &__item {
+                width: 50%;
+
+                &>h2 {
+                    font-size: 1.1rem;
+                    text-transform: uppercase;
+                    font-weight: 600;
+                    color: $txt-white;
+                    margin-bottom: .5rem;
+                }
+
+                &>span {
+                    display: block;
+                    color: #ef9608;
+                    font-weight: 700;
+                    font-size: 1rem;
+                }
+
+                &>p {
+                    font-size: .8rem;
+                    font-weight: 700;
+                }
+            }
+        }
+
+        &__info {
+            width: 50%;
+            @include flex(center, space-between);
+
+            &__item {
+                .title {
+                    font-size: 1.2rem;
+                    font-weight: 500;
+                    color: $txt-white;
+                    margin-bottom: .5rem;
+                }
+
+                &>p {
+                    a {
+                        font-size: 1rem;
+                        margin-bottom: .3rem;
+                        display: block;
+
+                        &:hover {
+                            color: $main-color;
+                        }
+                    }
+
+
+                }
+            }
+        }
+    }
+
+    &__search {
+        @include flex(center, space-between);
+        margin-top: 2rem;
+
+        &__input {
+
+            &>label {
+                display: block;
+                font-size: 1rem;
+                margin-bottom: .2rem;
+                color: $txt-white;
+            }
+
+            .input {
+                padding: .7rem 1rem;
+                border-top-left-radius: 10px;
+                border-bottom-left-radius: 10px;
+                border: none;
+                outline: none;
+            }
+
+            .btn-submit {
+                border-bottom-right-radius: 10px;
+                border-top-right-radius: 10px;
+                padding: .7rem 1rem;
+                background-color: $main-bg;
+                color: $txt-main-color;
+                cursor: pointer;
+
+            }
+        }
+
+        &__complaint {
+            @include flex(center, center);
+
+            i {
+                font-size: 2rem;
+                color: $main-color;
+                margin-right: 2rem;
+            }
+
+            &>span {
+                font-size: 1.5rem;
+                color: $main-color;
+                text-transform: uppercase;
+            }
+        }
+    }
+
+    &__address {
+        border-top: 1px solid $main-bg;
+        margin-top: 2rem;
+
+        &>p {
+            margin-top: 2rem;
+        }
+    }
+}

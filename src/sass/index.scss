@@ -1,0 +1,28 @@
+@import './variable';
+@import './minxin';
+@import './base';
+
+// Login
+@import './components/Login/login';
+@import './components/Admin/admin-login';
+@import './components/Admin/admin';
+@import './components/Admin/list-admin';
+@import './components/Admin/add-admin';
+@import './components/Admin/add-product';
+@import './components/HeaderFooter/footer';
+@import './components/HeaderFooter/header';
+@import './components/Banner/banner';
+@import './components/Policy/policy';
+@import './components/Button/button';
+@import './components/Product/product-Item';
+@import './components/Product/product';
+@import './components/Product/product-detail';
+@import './components/Pagination/pagination';
+@import './components/Accessory/accessory';
+@import './components/Loading/loading';
+@import './components/cart/cart';
+@import './components/profile/profile';
+@import './components/modal/modal';
+
+
+@import './components/Input/input';

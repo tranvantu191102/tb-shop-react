@@ -1,0 +1,61 @@
+.banner {
+    margin-top: $height-header;
+
+    &__container {
+        margin: 0 4rem;
+    }
+
+    &__slide {
+        width: 100%;
+
+        &__item {
+
+            & img {
+                height: 80vh;
+            }
+
+        }
+    }
+
+    &__control {
+        @include flex(center, center);
+
+        &__left {
+            cursor: pointer;
+
+            &>i {
+                font-size: 2rem;
+                color: $txt-main-color;
+
+                &:hover {
+                    color: $main-color;
+
+                }
+            }
+        }
+
+        &__number {
+            margin: 0 2rem;
+
+            &>span {
+                font-size: 1.4rem;
+                color: $txt-main-color;
+            }
+        }
+
+        &__right {
+            cursor: pointer;
+
+            &>i {
+                font-size: 2rem;
+                color: $txt-main-color;
+
+
+                &:hover {
+                    color: $main-color;
+
+                }
+            }
+        }
+    }
+}

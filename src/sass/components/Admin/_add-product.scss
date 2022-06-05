@@ -1,0 +1,54 @@
+.add-product {
+    @include flex(center, center);
+    flex-direction: column;
+    padding: 2rem 0;
+
+    &-title {
+        font-size: 1.5rem;
+        color: $txt-main-color;
+        margin-bottom: 2rem;
+    }
+
+    #blah {
+        width: 100px;
+        height: 100px
+    }
+
+    &-decsription {
+        @include flex(center, center);
+        flex-direction: column;
+
+        &>textarea {
+            width: 100%;
+            min-height: 200px;
+        }
+    }
+}
+
+.btn-add-product {
+    margin-top: 3rem;
+
+}
+
+.list-product {
+    @include flex(center, center);
+    flex-direction: column;
+    margin-top: 2rem;
+
+    &__title {
+        font-size: 1.2rem;
+        color: $txt-main-color;
+        font-weight: 600;
+        margin-bottom: 2rem;
+    }
+}
+
+
+.edit-product {
+    @include flex(center, center);
+    flex-direction: column;
+
+    &__title {
+        margin: 2rem 0;
+    }
+}

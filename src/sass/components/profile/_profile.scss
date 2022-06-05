@@ -1,0 +1,36 @@
+.profile {
+    margin: $height-header 4rem 4rem 4rem;
+    @include flex(flex-start, flex-start);
+
+
+    &__avatar {
+        width: 40%;
+
+        &>img {
+            width: 300px;
+        }
+    }
+
+    &__information {
+        width: 60%;
+
+
+        label {
+            margin: 1rem 0;
+
+
+            &>img {
+                width: 50px;
+                cursor: pointer;
+            }
+        }
+
+        input {
+            width: 100%;
+        }
+
+        select {
+            margin-bottom: 1rem;
+        }
+    }
+}

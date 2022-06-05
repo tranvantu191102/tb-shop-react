@@ -1,0 +1,17 @@
+.accessory {
+    margin-top: $height-header;
+    margin-right: 4rem;
+    margin-left: 4rem;
+    text-align: center;
+
+    &.title {
+        font-size: 2rem;
+        font-weight: 600;
+        color: $txt-main-color;
+        margin: 2rem 0;
+    }
+}
+
+.accessory-container {
+    position: relative;
+}

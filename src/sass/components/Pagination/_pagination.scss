@@ -1,0 +1,24 @@
+.pagination {
+    @include flex(center, center);
+    margin: 2rem 0;
+
+    &__index {
+        border: 1px solid $txt-second-color;
+        font-size: 1.2rem;
+        color: $txt-main-color;
+        padding: .5rem .7rem;
+        margin-right: .5rem;
+        border-radius: 10px;
+
+        &:hover {
+            background-color: $main-color;
+            color: $txt-white;
+            transition: background-color .3s ease, color .3s ease;
+        }
+
+        &.active {
+            background-color: $main-color;
+            color: $txt-white;
+        }
+    }
+}

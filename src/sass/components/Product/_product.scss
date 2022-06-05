@@ -1,0 +1,65 @@
+.product {
+    @include flex(flex-start, center);
+    margin: $height-header 4rem 0 4rem;
+
+    &__sidebar {
+        width: 20%;
+        min-height: calc(100vh - $height-header);
+        overflow: auto;
+
+        .sidebar-product {
+
+            &__title {
+                font-size: 1.2rem;
+                color: $txt-main-color;
+                margin-bottom: 3rem;
+                font-weight: 600;
+                @include flex(center, flex-start);
+
+                &>i {
+                    margin-right: .5rem;
+                    margin-top: 2px;
+                    font-size: 1.4rem;
+                }
+            }
+
+            &__catalog {
+                margin-left: 1rem;
+
+                &__item {
+                    margin-bottom: 2rem;
+
+                    &>span {
+                        font-size: 1rem;
+                        color: $txt-main-color;
+                        font-weight: 600;
+                        display: inline-block;
+                        cursor: pointer;
+
+                        &:hover {
+                            color: $main-color;
+                            transform: translateY(-4px);
+                            transition: color .3s ease, transform .3s ease;
+                        }
+                    }
+
+                    &.active {
+                        &>span {
+                            color: $main-color;
+                            transform: translateY(-4px);
+                            transition: color .3s ease, transform .3s ease;
+                        }
+                    }
+                }
+
+
+
+            }
+        }
+    }
+
+    &__info {
+        width: 80%;
+        position: relative;
+    }
+}
