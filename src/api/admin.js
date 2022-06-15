@@ -11,7 +11,7 @@ import {
 
 
 
-const urlAPI = 'http://localhost:8080'
+const urlAPI = 'https://tb-shop.herokuapp.com'
 
 const adminLogin = async (admin, dispath, navigate) => {
     dispath(loginStart())

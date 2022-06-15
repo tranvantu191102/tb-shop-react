@@ -174,7 +174,6 @@ const ProductDetail = () => {
             <Modal
                 isShowModal={isShowModal}
                 setIsShowModal={setIsShowModal}
-                user={user}
                 cart={[{ id, quantity, priceCurrent }]}
                 title="Thanh toán"
             />

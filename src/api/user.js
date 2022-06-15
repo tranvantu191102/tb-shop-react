@@ -10,7 +10,7 @@ import {
     addToCartRedux
 
 } from '../redux/userSlice'
-const urlAPI = 'http://localhost:8080'
+const urlAPI = 'https://tb-shop.herokuapp.com'
 
 const loginUser = async (user, dispath, navigate) => {
     dispath(loginUserStart())

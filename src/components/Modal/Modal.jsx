@@ -1,11 +1,13 @@
 import { useState, useEffect } from 'react'
 import numberWithCommas from '../../utils/NumberWithCommas'
-
+import { useSelector } from 'react-redux'
+import _ from "lodash"
 const Modal = (props) => {
 
-    const { isShowModal, setIsShowModal, user, cart } = props
+    const { isShowModal, setIsShowModal, cart } = props
     const [totalFee, setTotalFee] = useState(0)
     const feeShip = 30000
+    const user = useSelector(state => state.user.login.user)
     useEffect(() => {
         let total = 0
         cart.forEach(item => {
@@ -16,6 +18,7 @@ const Modal = (props) => {
 
 
     return (
+        user && !_.isEmpty(user) &&
         <div className={`modal ${isShowModal ? 'show' : ''}`}>
             <div className="modal-wrap">
                 <div className="modal__header">

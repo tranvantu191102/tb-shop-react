@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 
-const urlAPI = 'http://localhost:8080'
+const urlAPI = 'https://tb-shop.herokuapp.com'
 
 const addProductApi = async (product) => {
     try {

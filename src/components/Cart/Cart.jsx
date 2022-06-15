@@ -104,7 +104,6 @@ const Cart = () => {
             <Modal
                 isShowModal={isShowModal}
                 setIsShowModal={setIsShowModal}
-                user={user}
                 cart={cart}
                 title="Thanh toán"
             />
